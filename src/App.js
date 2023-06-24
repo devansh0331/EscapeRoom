@@ -1,12 +1,15 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Instruction from './component/instruction/Instruction';
+import Escape from './component/Escape room/Escape';
+import Instruction from './component/Instructions/Instructions'
 
 function App() {
   return (
-    <div className="App">
-      <Instruction/>
-    </div>
+    <Routes>
+      <Route path='/'  element={<Instruction/>} />
+      <Route path='/escaperoom'  element={<Escape/>} />
+    </Routes>
   );
 }
 
