@@ -1,5 +1,6 @@
 import React,  {useState} from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 // import {auth , provider} from "../auth/config"
 // import {signInWithPopup} from "firebase/auth"
@@ -7,6 +8,7 @@ import { Link } from 'react-router-dom'
 import './Instruction.css'
 
 const Instructions = () => {
+  const navigate = useNavigate()
 //   const [isAuth , setIsAuth] = useState(false)
 //   const signInWithGoogle = async () =>  {
 //     try{
@@ -26,8 +28,8 @@ const Instructions = () => {
       <p className='paper'>
           <h2 className='title'>ESCAPE ROOM</h2>
           <p className='subtitle'>Escape the room using the hidden clues</p>
-          <p className='subtitle s2'>Note: Only limited participants will be entering the next level ☠ </p>
-          <button onClick={()=>{}} className='btn'>Start</button>
+          <p className='subtitle s2'><b>Note:</b> Only limited participants will be entering the next level ☠ </p>
+          <button onClick={()=>{navigate('./escaperoom')}} className='btn'>Start</button>
           <p className='subtitle s3'>(You can google the riddles if required)</p> 
       </p>
      </div>
