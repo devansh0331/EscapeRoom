@@ -1,0 +1,6 @@
+.instruction{
+    background: url(../../img/c5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    z-index: -1;
+}
