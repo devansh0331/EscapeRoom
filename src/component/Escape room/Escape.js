@@ -1,13 +1,83 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import "./Escape.css"
+import { CircularProgress, Slide } from '@mui/material'
+
+import Box from '@mui/material/Box'
+
+
+
 
 const Escape = (props) => {
-  const {isAuth} = props
-  console.log(isAuth);
-  return (
-    <div className='escape'>
-        <span>Escape the room</span>
+    const [count, setCount] = useState(5)
+    const [completion, setCompletion] = useState(true)
+
+   
+    useEffect(() => {
+    const timer = setInterval(() => {
+      setCount(prevCount => prevCount - 1);
+      
+    }, 1000);
+
+    // Clean up the timer when the component unmounts
+    return () => clearInterval(timer);
+  }, []);
+
+    useEffect(() => {
+      setTimeout(() => {
+
+        setCompletion(true) 
+      }, 6000);
+    
+      return () => {
+        setCompletion(false)
+      }
+    }, [])
+    
+    
+    return (
+    
+     <div className='escape'>
+    {!completion && 
+     <Slide direction="left" in={true} >
+    <div className='escape-progress'>
+     
+     <div className='mui-box'>
+     <Box
+      sx={{
+        width: 500,
+        height: 200,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        color:'white',
+        fontWeight:'bold',
+        fontSize:'2rem',
+        backgroundColor: 'dark',
+        // '&:hover': {
+        //   backgroundColor: 'primary.main',
+        //   opacity: [0.9, 0.8, 0.7],
+        // },
+      }}
+    >Getting Started...
+    <CircularProgress value={50} sx={{color:'white',marginLeft:'8px'}}/>
+    </Box>
+   <span style={{color:'white', fontSize:'4rem'}}>{count}.</span>
     </div>
+</div>  
+</Slide>
+      }
+    {completion && 
+    
+   
+    <Slide direction="up" in={true} >
+        <div className='escape-container'>
+        <span>Escape the room</span>
+        </div>
+    </Slide>
+    
+    }
+    </div>
+
   )
 }
 
