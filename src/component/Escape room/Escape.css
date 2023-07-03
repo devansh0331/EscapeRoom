@@ -1,33 +1,77 @@
-.escape{
-    background: black;
-    height: 100vh;
-    width: 100%;
-    /* padding: 0 50%; */
+
+
+
+  
+  .escape{
+    /* The image used */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background: black;
+  
+  }
+
+.blurry-image{
+  width: 90%;
+  /* max-height: 100%; */
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  
+
+  scroll-snap-align: none;
+  /* filter: blur(8px); Adjust the blur intensity as desired */
+
+}
+.blurry-image.blur{
+    filter: blur(10px);
 }
 
 
 
-.mui-box{
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
-    /* margin-top: 8rem; */
+
+
+
+.mui-box {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s transform ease-in-out;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-}
+  }
 
 .escape-container{
-    /* height: 100%;
-    width: 100%; */
-    scroll-behavior: unset;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%; 
     scroll-snap-align: none;
+    color: black;
 }
 
 .escape-container > span{
-    font-size: 2rem;
+    padding: 10px;
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255, 255 ,0.4); /* Black w/opacity/see-through */
+    border: 3px solid #f1f1f1;
+    
     color: white;
+    font-size: 2rem;
+    /* color: white; */
     font-weight: bold;
+    
 }

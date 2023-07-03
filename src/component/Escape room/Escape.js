@@ -1,7 +1,7 @@
 import React , {useState , useEffect} from 'react'
 import "./Escape.css"
 import { CircularProgress, Slide } from '@mui/material'
-
+import bgImage from "../../img/escapeRoom.jpeg"
 import Box from '@mui/material/Box'
 
 
@@ -29,14 +29,16 @@ const Escape = (props) => {
       }, 6000);
     
       return () => {
+        setCount(5)
         setCompletion(false)
       }
     }, [])
     
     
     return (
-    
+    <>
      <div className='escape'>
+      <img src={bgImage} alt='bg-img' className={completion?'blurry-image':'blurry-image blur'}/>
     {!completion && 
      <Slide direction="left" in={true} >
     <div className='escape-progress'>
@@ -45,7 +47,7 @@ const Escape = (props) => {
      <Box
       sx={{
         width: 500,
-        height: 200,
+        height: 50,
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
@@ -61,7 +63,7 @@ const Escape = (props) => {
     >Getting Started...
     <CircularProgress value={50} sx={{color:'white',marginLeft:'8px'}}/>
     </Box>
-   <span style={{color:'white', fontSize:'4rem'}}>{count}.</span>
+   <span style={{color:'white', fontSize:'6rem'}}>{count}.</span>
     </div>
 </div>  
 </Slide>
@@ -71,12 +73,13 @@ const Escape = (props) => {
    
     <Slide direction="up" in={true} >
         <div className='escape-container'>
-        <span>Escape the room</span>
+        <span>Escape from room</span>
         </div>
     </Slide>
     
-    }
-    </div>
+    } </div>
+  
+    </>
 
   )
 }
