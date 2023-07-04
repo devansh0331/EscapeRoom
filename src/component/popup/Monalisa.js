@@ -1,9 +1,16 @@
 import React from 'react'
 
+import "./Popup.css"
+
+//Popup IMPORT
+import blankMonalisa from "../../img/final/popup/blankMonalisa.png"
+import CloseBtn from './CloseBtn'
+
 function Monalisa() {
   return (
-    <div>
-     <h1>Monalisa Popup</h1> 
+    <div className='popup-container'>
+    <img src={blankMonalisa} alt='Popup'/>
+    <CloseBtn/>
     </div>
   )
 }

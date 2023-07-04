@@ -37,7 +37,7 @@
 
 
 /* Btn imgs ht. wdth */
-#calender , #mobile , #monalisa , #laptop , #briefcase , #sticky , #clock , #grid , #doorlock{
+#calender , #mobile , #monalisa , #laptop , #briefcase , #sticky , #clock , #grid , #doorlock , #bookshelf{
   cursor: pointer;
   
   z-index: 1;
@@ -47,16 +47,16 @@
   height: 11rem;
   width: 9rem;
   
-  top: 30%;
-  left: 52%;
+  top: 26%;
+  left: 51%;
 }
 
 #monalisa{
   position: absolute;
   height: 13rem;
   width: 11rem;
-  top: 28%;
-  left: 35%;
+  top: 24%;
+  left: 36.3%;
 
 }
 
@@ -89,7 +89,7 @@
   position: absolute;
   height: 4rem;
   width: 5rem;
-  bottom: 55%;
+  bottom: 40%;
   right: 5%;
 
 }
@@ -117,6 +117,14 @@
   left: 14.7%;
 
 }
+
+#bookshelf{
+  position: absolute;
+  height: 15rem;
+  width: 30rem;
+  top: 50%;
+  left: 32%;
+}
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -142,8 +150,8 @@
 .escape-container{
     position: absolute;
     top: 0;
-    height: 100%;
-    width: 100%; 
+    left: 40%;
+
     scroll-snap-align: none;
     color: black;
 }
@@ -169,13 +177,13 @@
     object-fit: cover;
   }
   #calender{
-    height: 6rem;
+    height: 5.5rem;
     width: 4.5rem;
 
   }
 
   #monalisa{
-    height: 8rem;
+    height: 7.5rem;
     width: 6.5rem;
     left: 37%;
   }
@@ -219,7 +227,30 @@
     left: 17.4%;
   
   }
+
+  #bookshelf{
+    /* height: 7.5rem;
+  width: 15rem;
+  left: 35%; */
+  height: 7rem;
+  width: 14.5rem;
+  left: 33%;
+  }
 }
+
+@media only screen and (width: 740px){
+  #bookshelf{
+    height: 7rem;
+  width: 14.5rem;
+  left: 33%;
+  }
+  #laptop{
+    height: 4rem;
+    width: 5rem;
+    right: 52%;
+  }
+} 
+
 @media only screen and (max-width: 700px) {
   .blurry-image{
     width: 90%;
@@ -273,5 +304,10 @@
     top: 45%;
     left: 14%;
   
+  }
+  #bookshelf{
+    height: 7rem;
+  width: 14rem;
+  left: 31.4%;
   }
 }

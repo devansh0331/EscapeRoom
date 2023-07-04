@@ -13,6 +13,13 @@ import Laptop from './component/popup/Laptop';
 import Mobile from './component/popup/Mobile';
 import Monalisa from './component/popup/Monalisa';
 import Sticky from './component/popup/Sticky';
+import Bookshelf from './component/popup/Bookshelf';
+
+//Books Popup
+import Dictionary from './component/popup/bookPopup/Dictionary';
+import Encyclopedia from './component/popup/bookPopup/Encyclopedia';
+import Ikigai from './component/popup/bookPopup/Ikigai';
+import Investor from './component/popup/bookPopup/Investor';
 
 
 function App() {
@@ -23,13 +30,18 @@ function App() {
       <Route path='/coundown'  element={<CounDown/>} />
       <Route path='/popup/Calender'  element={<Calender/>} />
       <Route path='/popup/Briefcase'  element={<Briefcase/>} />
+      <Route path='/popup/Sticky'  element={<Sticky/>} />
       <Route path='/popup/Clock'  element={<Clock/>} />
       <Route path='/popup/DoorLock'  element={<Doorlock/>} />
       <Route path='/popup/Grid'  element={<Grid/>} />
       <Route path='/popup/Laptop'  element={<Laptop/>} />
       <Route path='/popup/Mobile'  element={<Mobile/>} />
       <Route path='/popup/Monalisa'  element={<Monalisa/>} />
-      <Route path='/popup/Sticky'  element={<Sticky/>} />
+      <Route path='/popup/Bookshelf'  element={<Bookshelf/>} />
+      <Route path='/popup/Encyclopedia'  element={<Encyclopedia/>} />
+      <Route path='/popup/Dictionary'  element={<Dictionary/>} />
+      <Route path='/popup/Ikigai'  element={<Ikigai/>} />
+      <Route path='/popup/Investor'  element={<Investor/>} />
     </Routes>
   );
 }

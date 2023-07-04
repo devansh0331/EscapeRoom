@@ -15,6 +15,7 @@ import StickyBtn from "../../img/final/btn/StickyBtn.png"
 import ClockBtn from "../../img/final/btn/ClockBtn.png"
 import GridBtn from "../../img/final/btn/GridBtn.png"
 import DoorLockBtn from "../../img/final/btn/DoorLockBtn.png"
+import BookshelfBtn from "../../img/final/btn/BookshelfBtn.png"
 import { useNavigate } from 'react-router-dom'
 
 
@@ -65,11 +66,12 @@ const Escape = () => {
         <img src={MonalisaBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="MonalisaBtn" id='monalisa'/>
         <img src={MobileBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="MobileBtn" id='mobile'/>
         <img src={LaptopBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="laptopBtn" id='laptop'/>
-        <img src={BriefcaseBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="BriefcaseBtn" id='briefcase'/>
         <img src={StickyBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="StickyBtn" id='sticky'/>
+        <img src={BriefcaseBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="BriefcaseBtn" id='briefcase'/>
         <img src={ClockBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="ClockBtn" id='clock'/>
         <img src={GridBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="GridBtn" id='grid'/>
         <img src={DoorLockBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="DoorLockBtn" id='doorlock'/>
+        <img src={BookshelfBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="BookshelfBtn" id='bookshelf'/>
      
       </div>
     
@@ -82,7 +84,8 @@ const Escape = () => {
         </div>
     </Slide>
     
-    } </div>
+    } 
+    </div>
   
     </>
 
