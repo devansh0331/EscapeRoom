@@ -1,44 +1,58 @@
 import React , {useState , useEffect} from 'react'
 import "./Escape.css"
-import { CircularProgress, Slide } from '@mui/material'
-import bgImage from "../../img/escapeRoom.jpeg"
+import { Slide } from '@mui/material'
+// import bgImage from "../../img/escapeRoom.jpeg"
 import clearBg from "../../img/final/bg/clearBg.png"
-import Box from '@mui/material/Box'
+
 
 //Btn IMPORT
 import CalenderBtn from "../../img/final/btn/Calender.png"
 import MonalisaBtn from "../../img/final/btn/MonalisaBtn.png"
+import MobileBtn from "../../img/final/btn/MobileBtn.png"
+import LaptopBtn from "../../img/final/btn/LaptopBtn.png"
+import BriefcaseBtn from "../../img/final/btn/BriefcaseBtn.png"
+import StickyBtn from "../../img/final/btn/StickyBtn.png"
+import ClockBtn from "../../img/final/btn/ClockBtn.png"
+import GridBtn from "../../img/final/btn/GridBtn.png"
+import DoorLockBtn from "../../img/final/btn/DoorLockBtn.png"
+import { useNavigate } from 'react-router-dom'
 
 
 
 
 
-const Escape = (props) => {
-    const [count, setCount] = useState(5)
+const Escape = () => {
     const [completion, setCompletion] = useState(true)
 
-   
-    useEffect(() => {
-    const timer = setInterval(() => {
-      setCount(prevCount => prevCount - 1);
-      
-    }, 1000);
+    const navigate = useNavigate()
 
-    // Clean up the timer when the component unmounts
-    return () => clearInterval(timer);
-  }, []);
+   
+    
 
     useEffect(() => {
       setTimeout(() => {
 
-        setCompletion(true) 
-      }, 6000);
+        setCompletion(true)
+        
+      }, 500);
     
       return () => {
-        setCount(5)
+       
         setCompletion(false)
       }
     }, [])
+
+    function capitalizeFirstLetter(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    const handleBtnClick = (e) => {
+        console.log(e.target.id);
+
+        navigate(`../popup/${capitalizeFirstLetter(e.target.id)}`)
+
+        
+    }
     
     
     return (
@@ -47,39 +61,18 @@ const Escape = (props) => {
       <div className='escape-bg'> 
       <img src={clearBg} alt='bg-img' className={completion?'blurry-image':'blurry-image blur'}/>
      
-        <img src={CalenderBtn} id='calender'/>
-        <img src={MonalisaBtn} id='monalisa'/>
+        <img src={CalenderBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="CalenderBtn" id='calender'/>
+        <img src={MonalisaBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="MonalisaBtn" id='monalisa'/>
+        <img src={MobileBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="MobileBtn" id='mobile'/>
+        <img src={LaptopBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="laptopBtn" id='laptop'/>
+        <img src={BriefcaseBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="BriefcaseBtn" id='briefcase'/>
+        <img src={StickyBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="StickyBtn" id='sticky'/>
+        <img src={ClockBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="ClockBtn" id='clock'/>
+        <img src={GridBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="GridBtn" id='grid'/>
+        <img src={DoorLockBtn} onClick={handleBtnClick} className={completion?'':'blur'} alt="DoorLockBtn" id='doorlock'/>
      
       </div>
-    {!completion && 
-     <Slide direction="left" in={true} >
-    <div className='escape-progress'>
-     
-     <div className='mui-box'>
-     <Box
-      sx={{
-        width: 500,
-        height: 50,
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center',
-        color:'white',
-        fontWeight:'bold',
-        fontSize:'2rem',
-        backgroundColor: 'dark',
-        // '&:hover': {
-        //   backgroundColor: 'primary.main',
-        //   opacity: [0.9, 0.8, 0.7],
-        // },
-      }}
-    >Getting Started...
-    <CircularProgress value={50} sx={{color:'white',marginLeft:'8px'}}/>
-    </Box>
-   <span style={{color:'white', fontSize:'6rem'}}>{count}.</span>
-    </div>
-</div>  
-</Slide>
-      }
+    
     {completion && 
     
    

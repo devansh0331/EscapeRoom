@@ -12,7 +12,7 @@
   }
 
 .blurry-image{
-  width: 90%;
+  width: 89%;
   /* max-height: 100%; */
   height: 100%;
   object-fit: cover;
@@ -23,18 +23,25 @@
   /* filter: blur(8px); Adjust the blur intensity as desired */
 
 }
-.blurry-image.blur{
+.blur{
     filter: blur(10px);
+  
 }
 
 .escape-bg{
   position: relative;
+  width: 100%;
 }
 
 
 
 
 /* Btn imgs ht. wdth */
+#calender , #mobile , #monalisa , #laptop , #briefcase , #sticky , #clock , #grid , #doorlock{
+  cursor: pointer;
+  
+  z-index: 1;
+}
 #calender{
   position: absolute;
   height: 11rem;
@@ -53,6 +60,63 @@
 
 }
 
+#mobile{
+  position: absolute;
+  height: 2rem;
+  width: 4rem;
+  bottom: 13%;
+  right: 43%;
+}
+
+#laptop{
+  position: absolute;
+  height: 7rem;
+  width: 9rem;
+
+  bottom: 10%;
+  right: 52.3%;
+}
+
+#briefcase{
+  position: absolute;
+  height: 4rem;
+  width: 8rem;
+  bottom: 3.5%;
+  right: 15.5%;
+}
+
+#sticky{
+  position: absolute;
+  height: 4rem;
+  width: 5rem;
+  bottom: 55%;
+  right: 5%;
+
+}
+
+#clock{
+  position: absolute;
+  height: 20rem;
+  width: 15rem;
+  right: 7.6%;
+  bottom: 30%;
+}
+
+#grid{
+  position: absolute;
+  height: 3rem;
+  width: 4rem;
+  top: 40%;
+  right: 25.5%;
+}
+#doorlock{
+  position: absolute;
+  height: 6rem;
+  width: 6.8rem;
+  top: 45%;
+  left: 14.7%;
+
+}
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -98,6 +162,12 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .blurry-image{
+    width: 82%;
+    height: 100%;
+
+    object-fit: cover;
+  }
   #calender{
     height: 6rem;
     width: 4.5rem;
@@ -107,5 +177,101 @@
   #monalisa{
     height: 8rem;
     width: 6.5rem;
+    left: 37%;
+  }
+
+  #mobile{
+    height: 1rem;
+    width: 2rem;
+  }
+  #laptop{
+    height: 4.6rem;
+    width: 5.6rem;
+  }
+  #briefcase{
+    height: 2rem;
+    width: 4rem;
+    
+  }
+  #sticky{
+   
+    height: 2rem;
+    width: 3rem;
+    right: 8%;
+  }
+
+  #clock{
+    height: 11rem;
+    width: 7rem;
+    right: 11.9%;
+    bottom: 28%;
+  }
+
+  #grid{
+    height: 1.4rem;
+    width: 3.5rem;
+    right: 26%;
+  }
+  #doorlock{
+    height: 3.6rem;
+    width: 3.7rem;
+    top: 45%;
+    left: 17.4%;
+  
+  }
+}
+@media only screen and (max-width: 700px) {
+  .blurry-image{
+    width: 90%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+  #calender{
+    height: 5rem;
+    width: 4rem;
+
+  }
+
+  #monalisa{
+    height: 7rem;
+    width: 5.5rem;
+  }
+
+  #mobile{
+    height: 1rem;
+    width: 2rem;
+  }
+  #laptop{
+    height: 3.6rem;
+    width: 4.6rem;
+  }
+  #briefcase{
+    height: 2rem;
+    width: 4rem;
+    
+  }
+  #sticky{
+   
+    height: 1.5rem;
+    width: 2.5rem;
+    right: 4%;
+  }
+  #clock{
+    height: 10rem;
+    width: 7rem;
+    right: 7%;
+    bottom: 27%;
+  }
+  #grid{
+    height: 1rem;
+    width: 2rem;
+  }
+  #doorlock{
+    height: 3.6rem;
+    width: 3.7rem;
+    top: 45%;
+    left: 14%;
+  
   }
 }
