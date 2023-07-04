@@ -14,6 +14,7 @@ import Mobile from './component/popup/Mobile';
 import Monalisa from './component/popup/Monalisa';
 import Sticky from './component/popup/Sticky';
 import Bookshelf from './component/popup/Bookshelf';
+import DeadEndMonalisa from './component/popup/DeadEndMonalisa'
 
 //Books Popup
 import Dictionary from './component/popup/bookPopup/Dictionary';
@@ -42,6 +43,7 @@ function App() {
       <Route path='/popup/Dictionary'  element={<Dictionary/>} />
       <Route path='/popup/Ikigai'  element={<Ikigai/>} />
       <Route path='/popup/Investor'  element={<Investor/>} />
+      <Route path='/popup/dem' element={<DeadEndMonalisa/>} />
     </Routes>
   );
 }

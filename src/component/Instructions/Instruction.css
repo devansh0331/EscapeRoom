@@ -58,7 +58,7 @@
     font-weight: 400;
     padding-top: 10px;
 }
-.btn{
+.btnStart{
     background-color: rgb(149, 90, 42);
     border-radius: 9999px;
     width: 150px;
@@ -69,7 +69,7 @@
     font-size: 35px;
     margin: 30px;
 }
-.btn:hover{
+.btnStart:hover{
     background-color: rgb(40, 1, 1);
     color: beige;
 }

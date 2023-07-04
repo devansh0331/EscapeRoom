@@ -1,0 +1,55 @@
+.popup-container > span{
+    position: absolute;
+    
+    top: 30%;
+    left: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.input{
+    position: absolute;
+    top: 40%;
+    margin: auto;
+    text-align: center;
+    left: 43%;
+    height: 60px;
+    width: 200px;
+    border: 2px solid gray;
+    background-color: #B8B8B8;
+    border-radius: 10px;
+    font-size: 35px;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn{
+    position: absolute;
+    top: 55%;
+    margin: auto;
+    text-align: center;
+    left: 45.5%;
+    height: 40px;
+    width: 130px;
+    border: 2px solid rgb(78, 77, 77);
+    background-color: rgb(141, 140, 140);
+    border-radius: 10px;
+    font-size: 22px;
+    color: black;
+}
+.btn:hover{
+    background-color: #2a2a2a;
+    color: #fff;
+}
+.mssg{
+    position: absolute;
+    top: 68%;
+    color: black;
+    text-align: center;
+    left: 41.2%;
+    font-size: 18px;
+    font-weight: 400;
+}

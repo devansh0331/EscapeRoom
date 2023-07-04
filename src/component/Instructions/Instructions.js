@@ -29,7 +29,7 @@ const Instructions = () => {
           <h2 className='title'>ESCAPE ROOM</h2>
           <p className='subtitle'>Escape the room using the hidden clues</p>
           <p className='subtitle s2'><b>Note:</b> Only limited participants will be entering the next level ☠ </p>
-          <button onClick={()=>{navigate('./coundown')}} className='btn'>Start</button>
+          <button onClick={()=>{navigate('./coundown')}} className='btnStart'>Start</button>
           <p className='subtitle s3'>(You can google the riddles if required)</p> 
       </p>
      </div>

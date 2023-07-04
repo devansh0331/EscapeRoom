@@ -78,9 +78,10 @@ const Escape = () => {
     {completion && 
     
    
-    <Slide direction="up" in={true} >
+    // <Slide direction="up" in={true} >
+    <Slide>
         <div className='escape-container'>
-        <span>Escape from room</span>
+        <span>Escape from the room</span>
         </div>
     </Slide>
     
