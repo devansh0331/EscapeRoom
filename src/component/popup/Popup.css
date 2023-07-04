@@ -81,4 +81,8 @@
         height: 15rem;
     }
 
+    .popup-container > span{
+        font-size: 1rem !important;
+    }
+
 }
