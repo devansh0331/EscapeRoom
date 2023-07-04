@@ -27,10 +27,31 @@
     filter: blur(10px);
 }
 
+.escape-bg{
+  position: relative;
+}
 
 
 
 
+/* Btn imgs ht. wdth */
+#calender{
+  position: absolute;
+  height: 11rem;
+  width: 9rem;
+  
+  top: 30%;
+  left: 52%;
+}
+
+#monalisa{
+  position: absolute;
+  height: 13rem;
+  width: 11rem;
+  top: 28%;
+  left: 35%;
+
+}
 
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -74,4 +95,17 @@
     /* color: white; */
     font-weight: bold;
     
+}
+
+@media only screen and (max-width: 1000px) {
+  #calender{
+    height: 6rem;
+    width: 4.5rem;
+
+  }
+
+  #monalisa{
+    height: 8rem;
+    width: 6.5rem;
+  }
 }

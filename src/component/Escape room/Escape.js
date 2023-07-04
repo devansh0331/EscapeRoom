@@ -2,7 +2,13 @@ import React , {useState , useEffect} from 'react'
 import "./Escape.css"
 import { CircularProgress, Slide } from '@mui/material'
 import bgImage from "../../img/escapeRoom.jpeg"
+import clearBg from "../../img/final/bg/clearBg.png"
 import Box from '@mui/material/Box'
+
+//Btn IMPORT
+import CalenderBtn from "../../img/final/btn/Calender.png"
+import MonalisaBtn from "../../img/final/btn/MonalisaBtn.png"
+
 
 
 
@@ -38,7 +44,13 @@ const Escape = (props) => {
     return (
     <>
      <div className='escape'>
-      <img src={bgImage} alt='bg-img' className={completion?'blurry-image':'blurry-image blur'}/>
+      <div className='escape-bg'> 
+      <img src={clearBg} alt='bg-img' className={completion?'blurry-image':'blurry-image blur'}/>
+     
+        <img src={CalenderBtn} id='calender'/>
+        <img src={MonalisaBtn} id='monalisa'/>
+     
+      </div>
     {!completion && 
      <Slide direction="left" in={true} >
     <div className='escape-progress'>
