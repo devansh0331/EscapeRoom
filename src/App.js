@@ -14,12 +14,14 @@ import Mobile from './component/popup/Mobile';
 import Monalisa from './component/popup/Monalisa';
 import Sticky from './component/popup/Sticky';
 import Bookshelf from './component/popup/Bookshelf';
+import MobileRiddle from './component/popup/MobileRiddle';
 
 //DeadEnd Popup
 import DeadEndMonalisa from './component/popup/DeadEndMonalisa'
 import DeadEndCalender from './component/popup/DeadEndCalender'
 import DeadEndLaptop from './component/popup/DeadEndLaptop'
 import DeadEndBriefcase from './component/popup/DeadEndBriefcase'
+import DeadEndMobile from './component/popup/DeadEndMobile';
 
 //Books Popup
 import Dictionary from './component/popup/bookPopup/Dictionary';
@@ -52,6 +54,8 @@ function App() {
       <Route path='/popup/dec' element={<DeadEndCalender/>} />
       <Route path='/popup/del' element={<DeadEndLaptop/>} />
       <Route path='/popup/deb' element={<DeadEndBriefcase/>} />
+      <Route path='/popup/demo' element={<DeadEndMobile/>}/>
+      <Route path='/popup/mr' element={<MobileRiddle/>}/>
     </Routes>
   );
 }

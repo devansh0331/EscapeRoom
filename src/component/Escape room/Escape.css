@@ -1,6 +1,9 @@
 
-
-
+.popup-container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
   
   .escape{
     /* The image used */
@@ -31,6 +34,7 @@
 .escape-bg{
   position: relative;
   width: 100%;
+  height: 100vh;
 }
 
 
@@ -45,18 +49,18 @@
 #calender{
   position: absolute;
   height: 11rem;
-  width: 9rem;
+  width: 10rem;
   
-  top: 26%;
-  left: 50%;
+  top: 25%;
+  left: 50.5%;
 }
 
 #monalisa{
   position: absolute;
-  height: 12rem;
+  height: 12.5rem;
   width: 11rem;
   top: 24%;
-  left: 35%;
+  left: 37.5%;
 
 }
 
@@ -64,25 +68,25 @@
   position: absolute;
   height: 2rem;
   width: 4rem;
-  bottom: 13%;
+  bottom: 10%;
   right: 43%;
 }
 
 #laptop{
   position: absolute;
-  height: 7.2rem;
-  width: 8.1rem;
+  height: 7.9rem;
+  width: 10.2rem;
 
-  bottom: 9.9%;
-  right: 53%;
+  bottom: 7.5%;
+  left: 37.9%;
 }
 
 #briefcase{
   position: absolute;
-  height: 4rem;
-  width: 8rem;
-  bottom: 3.5%;
-  right: 15.5%;
+  height: 4.5rem;
+  width: 8.5rem;
+  bottom: 0.2%;
+  right: 15.7%;
 }
 
 #sticky{
@@ -90,24 +94,24 @@
   height: 4rem;
   width: 3rem;
   bottom: 40%;
-  right: 5.4%;
+  right: 6.2%;
 
 }
 
 #clock{
   position: absolute;
-  height: 18rem;
-  width: 7.1rem;
-  right: 12%;
-  bottom: 32%;
+  height:25rem;
+  width: 10.3rem;
+  right: 10.6%;
+  bottom: 27%;
 }
 
 #grid{
   position: absolute;
-  height: 3rem;
-  width: 2.5rem;
-  top: 39%;
-  right: 26%;
+  height: 3.9rem;
+  width: 3.8rem;
+  top: 38.3%;
+  right: 25.99%;
   filter: brightness(80%);
 }
 #doorlock{
@@ -115,7 +119,7 @@
   height: 6rem;
   width: 6.8rem;
   top: 45%;
-  left: 14.7%;
+  left: 15.3%;
 
 }
 
@@ -123,8 +127,8 @@
   position: absolute;
   height: 6rem;
   width: 22.8rem;
-  top: 55.6%;
-  left: 36%;
+  top: 61.3%;
+  left: 37.85%;
 }
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */

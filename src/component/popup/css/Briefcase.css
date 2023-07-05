@@ -1,36 +1,23 @@
 .popup-container > span{
-    position: absolute;
-    
+    position: absolute; 
     top: 30%;
     left: 30%;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.inpsBriefcase{
+.inputCode{
     position: absolute;
-    top: 45%;
-    margin: auto;
+    top: 49%;
+    left: 42.2%;
+    height: 60px;
+    width: 300px;
     text-align: center;
-    /* left: 36%; */
-    height: 2rem;
-    width: 100%;
-    
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inpsBriefcase > input{
-   
-    border: 2px solid gray;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 10px;  
-     outline: none;
-     background: none;
-     color: white;
+    border-radius: 17px;
+    background-color: #2a2a2a;
+    border: 2px solid black;
+    font-size: 35px;
+    color: gray;
 }
 
 
@@ -42,14 +29,14 @@ input::-webkit-inner-spin-button {
 
 .btnDivBriefcase{
     position: absolute;
-    top: 55%;
+    top: 60%;
     width: 100%;
     /* height: inherit; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    left: 0.9%;
 
 }
 

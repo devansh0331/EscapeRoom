@@ -1,0 +1,27 @@
+.mobileInput{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #6d6d6d;
+    position: absolute;
+    top: 40%;
+    left: 44.6%;
+    border-radius: 12px;
+    font-size: 25px;
+}
+.btnMobile{
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    left: 46.9%;
+    height: 30px;
+    border:  2px solid #6d6d6d;
+    border-radius: 10px;
+    background-color: #545454;
+    color: #fff;
+}
+.mssg{
+    position: absolute;
+    left: 46.2%;
+    top: 63%;
+}

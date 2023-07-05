@@ -23,7 +23,7 @@ function Briefcase() {
 
     }else{
       
-      setMssg("Wrong Password")
+      setMssg("Sorry! The code is wrong")
       setTimeout(()=>{
         setMssg("");
       },1000);
@@ -33,11 +33,8 @@ function Briefcase() {
   return (
     <div className='popup-container'>
     <img src={blankBriefcase} alt='Popup'/>
-    <div className='inpsBriefcase'>
-
     {/* <input type='number' onChange={(e)=>{setDate(e.target.value.slice(0,2));}} placeholder='Date' value={date} id="dateInput"/> */}
-    <input type='String' onChange={(e)=>{setPassword(e.target.value.slice(0,10));}} placeholder='password' value={password} id="monthInput"/>
-    </div>
+    <input className='inputCode' type='String' onChange={(e)=>{setPassword(e.target.value.slice(0,10).toUpperCase());}} placeholder='Enter the Code' value={password} />
     <div className='btnDivBriefcase'>
 
     <button className='btnBriefcase' onClick={(e)=>onClickHandle()}>Open</button>

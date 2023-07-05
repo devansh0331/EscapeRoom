@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 
 import "./Popup.css"
-import "./css/Laptop.css"
+import "./css/Mobile.css"
 
 //Popup IMPORT
 import blankMobile from "../../img/final/popup/blankMobile.png"
@@ -21,7 +21,7 @@ function Mobile() {
       setMssg("Opening...")
       setTimeout(()=>{
         setMssg("");
-        navigate('/popup/del');
+        navigate('/popup/mr');
       },1000);
 
     }else{
@@ -37,16 +37,10 @@ function Mobile() {
   return (
     <div className='popup-container'>
     <img src={blankMobile} alt='Popup'/>
-
-    <div className='inpsLaptop'>
-
-    {/* <input type='number' onChange={(e)=>{setDate(e.target.value.slice(0,2));}} placeholder='Date' value={date} id="dateInput"/> */}
-    <input type='String' onChange={(e)=>{setPassword(e.target.value.slice(0,10));}} placeholder='password' value={password} id="monthInput"/>
-    </div>
-    <div className='btnDiv'>
-    <button className='btnLaptop' onClick={(e)=>onClickHandle()}>Open</button>
+    <div className='mobileDiv'>
+    <input type='String' className='mobileInput' onChange={(e)=>{setPassword(e.target.value.slice(0,10).toUpperCase());}} placeholder='PASSWORD' value={password} />
+    <button className='btnMobile' onClick={(e)=>onClickHandle()}>Open</button>
     <p className='mssg'>{mssg}</p>
-
     </div>
     <CloseBtn/>
     </div>
