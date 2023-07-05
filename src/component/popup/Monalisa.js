@@ -17,7 +17,11 @@ function Monalisa() {
   const navigate = useNavigate();
   const onClickHandle =(e) =>{
     if(year == 1452){
-      navigate('/popup/dem');
+      setMssg("Congratulations! You are Right.")
+      setTimeout(()=>{
+        setMssg("");
+        navigate('/popup/dem');
+      },1000);
 
     }else{
       setYear(0);
