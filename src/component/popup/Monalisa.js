@@ -31,7 +31,7 @@ function Monalisa() {
   return (
     <div className='popup-container'>
     <img src={blankMonalisa} alt='Popup'/>
-    <input className='input' type='number' onChange={(e)=>{setYear(e.target.value)}} value={year}/>
+    <input className='input' type='number' onChange={(e)=>{setYear(e.target.value.slice(0,4));}} value={year} id="yearInput"/>
     <button className='btn' onClick={(e)=>onClickHandle()}>Submit</button>
     <p className='mssg'>{mssg}</p>
     <CloseBtn/>
