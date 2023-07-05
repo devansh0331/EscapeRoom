@@ -27,12 +27,15 @@
 }
 .paper{
     padding:70px;
+    position: inherit;
+    bottom: 15%;
+    right: 10%;
     background: url(../../img/paper.png);
     background-repeat: no-repeat;
     background-size:cover;
     margin: auto;
-    height: 80vh;
-    width: 110%;
+    height: 90vh;
+    width: 125%;
 }
 .title{
     font-size: 60px;
@@ -54,13 +57,13 @@
     padding-left: 8.9px;
 }
 .s3{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
-    padding-top: 10px;
+    padding-top: 1px;
 }
 .btnStart{
-    background-color: rgb(149, 90, 42);
-    border-radius: 9999px;
+    background-color: rgb(149, 90, 41);
+    border-radius: 50rem;
     width: 150px;
     text-align: center;
     align-items: center;
@@ -70,7 +73,7 @@
     margin: 30px;
 }
 .btnStart:hover{
-    background-color: rgb(40, 1, 1);
+    background-color: rgb(103, 69, 40);
     color: beige;
 }
 
