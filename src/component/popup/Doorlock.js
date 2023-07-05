@@ -8,16 +8,30 @@ import CloseBtn from './CloseBtn'
 
 function Doorlock() {
 
-  const [doorlockInp, setdoorlockInp] = useState('')
+
+  const [inp1, setinp1] = useState()
+  const [inp2, setinp2] = useState()
+  const [inp3, setinp3] = useState()
+  const [inp4, setinp4] = useState()
+  const [inp5, setinp5] = useState()
+  const [inp6, setinp6] = useState()
+
+  const[mssg,setMssg] = useState("");
 
   const handleOnSubmit = (e) => {
       // e.preventDefault()
-      if(doorlockInp === "456123"){
-        console.log('Yeah! You have cleared this round');
+      if((inp1 == 3) && (inp2 == 4) && (inp3 == 9) && (inp4 == 8) && (inp5 == 6) && (inp6 == 2)){
+        setMssg('Yeah! You have cleared this round');
+        setTimeout(() => {
+          setMssg('')
+        }, 2000);
       }
 
       else{
-        console.log('Wrong Input! Try again');
+        setMssg('Wrong Input! Try again');
+        setTimeout(() => {
+          setMssg('')
+        }, 2000);
       }
   }
   return (
@@ -27,19 +41,21 @@ function Doorlock() {
 
     <span>Enter the code to UNLOCK the Door</span>
     <div className='inps'>
-      <input/>
-      <input/>
-      <input/>
-      <input/>
-      <input/>
-      <input/>
-    </div>
-    <div className='inps2'>
-      <input onChange={(e) => {setdoorlockInp(e.target.value)}} value={doorlockInp}/>
+      <input type='number' onChange={(e)=>{setinp1(e.target.value.slice(0,1));}} placeholder='' value={inp1}/>
+      <input type='number' onChange={(e)=>{setinp2(e.target.value.slice(0,1));}} placeholder='' value={inp2}/>
+      <input type='number' onChange={(e)=>{setinp3(e.target.value.slice(0,1));}} placeholder='' value={inp3}/>
+      <input type='number' onChange={(e)=>{setinp4(e.target.value.slice(0,1));}} placeholder='' value={inp4}/>
+      <input type='number' onChange={(e)=>{setinp5(e.target.value.slice(0,1));}} placeholder='' value={inp5}/>
+      <input type='number' onChange={(e)=>{setinp6(e.target.value.slice(0,1));}} placeholder='' value={inp6}/>
       
     </div>
+    {/* <div className='inps2'>
+      <input onChange={(e) => {setdoorlockInp(e.target.value)}} value={doorlockInp}/>
+      
+    </div> */}
     <div className='open-btn'>
       <button onClick={handleOnSubmit}>Open</button>
+      <p className='mssg'>{mssg}</p>
     </div>
     </div>
   )

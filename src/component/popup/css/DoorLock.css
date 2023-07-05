@@ -51,10 +51,13 @@
 
 .open-btn{
     position: absolute;
-    
+    width: 100%;
     /* bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 23%;
-    right: 30%;
+    /* right: 30%; */
 }
 
 .open-btn button{
@@ -62,7 +65,7 @@
     padding: 0.5rem;
     border-radius: 1rem;
     font-size: 0.8rem;
-    width: 140%;
+    width: 10%;
     color: white;
     font-weight: bold;
     background: rgb(1, 107, 1);

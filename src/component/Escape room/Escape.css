@@ -74,7 +74,7 @@
   width: 8.1rem;
 
   bottom: 9.9%;
-  right: 51.8%;
+  right: 53%;
 }
 
 #briefcase{
@@ -96,10 +96,10 @@
 
 #clock{
   position: absolute;
-  height: 16rem;
+  height: 18rem;
   width: 7.1rem;
   right: 12%;
-  bottom: 30%;
+  bottom: 32%;
 }
 
 #grid{
@@ -124,7 +124,7 @@
   height: 6rem;
   width: 22.8rem;
   top: 55.6%;
-  left: 33.6%;
+  left: 36%;
 }
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -210,9 +210,9 @@
   }
 
   #clock{
-    height: 11rem;
-    width: 7rem;
-    right: 11.9%;
+    height: 12rem;
+  width: 5rem;
+    right: 14%;
     bottom: 28%;
   }
 
@@ -233,17 +233,18 @@
     /* height: 7.5rem;
   width: 15rem;
   left: 35%; */
-  height: 7rem;
-  width: 14.5rem;
-  left: 33%;
+  height: 3rem;
+  width: 14rem;
+  left: 36%;
   }
 }
 
 @media only screen and (width: 740px){
   #bookshelf{
-    height: 7rem;
-  width: 14.5rem;
-  left: 33%;
+    height: 2.5rem;
+  width: 12.5rem;
+  left: 35%;
+  
   }
   #laptop{
     height: 4rem;
@@ -290,9 +291,9 @@
     right: 4%;
   }
   #clock{
-    height: 10rem;
-    width: 7rem;
-    right: 7%;
+    height: 9.5rem;
+    width: 5rem;
+    right: 10%;
     bottom: 27%;
   }
   #grid{
@@ -307,8 +308,8 @@
   
   }
   #bookshelf{
-    height: 7rem;
-  width: 14rem;
-  left: 31.4%;
+   height: 3rem;
+  width: 12rem;
+  left: 35%;
   }
 }

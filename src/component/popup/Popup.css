@@ -86,4 +86,41 @@
         font-size: 1rem !important;
     }
 
+    .inpsCalender{
+        width: 200px !important;
+    }
+    
+    #dateInput{
+        height: 2rem !important;
+        font-size: 1rem !important;
+        width: 4rem !important;
+    }
+    #monthInput{
+        font-size: 1rem !important;
+        height: 2rem !important;
+        width: 6rem !important;
+    }
+
+    .btn{
+        height: 30px !important;
+        width: 75px !important;
+        font-size: 1rem !important;
+        margin-top: 1rem !important;
+        /* padding: 10px !important; */
+        /* top: 60% !important; */
+    }
+
+    .inpsLaptop{
+        width: auto;
+        /* left: 19% !important; */
+    }
+
+    .btnLaptop{
+        height: 25px !important;
+        /* padding: 5px !important; */
+        font-size: 0.8rem;
+        font-weight: bold;
+        width: 60px !important;
+    }
+
 }
