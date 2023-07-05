@@ -15,6 +15,7 @@ import Monalisa from './component/popup/Monalisa';
 import Sticky from './component/popup/Sticky';
 import Bookshelf from './component/popup/Bookshelf';
 import MobileRiddle from './component/popup/MobileRiddle';
+import LaptopRiddle from './component/popup/LaptopRiddle';
 
 //DeadEnd Popup
 import DeadEndMonalisa from './component/popup/DeadEndMonalisa'
@@ -56,6 +57,7 @@ function App() {
       <Route path='/popup/deb' element={<DeadEndBriefcase/>} />
       <Route path='/popup/demo' element={<DeadEndMobile/>}/>
       <Route path='/popup/mr' element={<MobileRiddle/>}/>
+      <Route path='/popup/lr' element={<LaptopRiddle/>}/>
     </Routes>
   );
 }

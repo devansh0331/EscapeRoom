@@ -9,19 +9,7 @@ import './Instruction.css'
 
 const Instructions = () => {
   const navigate = useNavigate()
-//   const [isAuth , setIsAuth] = useState(false)
-//   const signInWithGoogle = async () =>  {
-//     try{
 
-//         const response = await signInWithPopup(auth, provider)
-//         console.log(response.user.displayName);
-//         // cookies.set("auth-token" , response.user.refreshToken)
-//         setIsAuth(true)
-//     }catch(err){
-//         console.log(err);
-//     }
-    
-// }
   return (
     <div className='instruction'>
      <div className='main'>

@@ -21,9 +21,10 @@
     margin: auto;
     position: relative;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 70px;
     align-items: center;
     text-align: center;
+    top: 4%;
 }
 .paper{
     padding:70px;
@@ -42,7 +43,7 @@
     font-weight: 800;
     text-align: center;
     color: black;
-    padding-top: 20px;
+    padding-top: 115px;
 }
 .subtitle{
     font-size: 30px;

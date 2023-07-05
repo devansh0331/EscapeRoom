@@ -16,11 +16,11 @@ function Laptop() {
  
   const navigate = useNavigate();
   const onClickHandle =(e) =>{
-    if(password === 'C0G07BH'){
+    if(password === 'COG07BH'){
       setMssg("Opening...")
       setTimeout(()=>{
         setMssg("");
-        navigate('/popup/del');
+        navigate('/popup/lr');
       },1000);
 
     }else{
@@ -36,16 +36,9 @@ function Laptop() {
   return (
     <div className='popup-container'>
     <img src={blankLaptop} alt='Popup'/>
-    <div className='inpsLaptop'>
-
-    {/* <input type='number' onChange={(e)=>{setDate(e.target.value.slice(0,2));}} placeholder='Date' value={date} id="dateInput"/> */}
-    <input type='String' onChange={(e)=>{setPassword(e.target.value.slice(0,10));}} placeholder='password' value={password} id="monthInput"/>
-    </div>
-    <div className='btnDiv'>
-
+    <input className='inputLaptop' type='String' onChange={(e)=>{setPassword(e.target.value.slice(0,10).toUpperCase());}} placeholder='ENTER PASSWORD' value={password} />
     <button className='btnLaptop' onClick={(e)=>onClickHandle()}>Open</button>
-    <p className='mssg'> {mssg}</p>
-    </div>
+    <p className='mssgLaptop'> {mssg}</p> 
     <CloseBtn/>
     </div>
   )

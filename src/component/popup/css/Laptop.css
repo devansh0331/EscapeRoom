@@ -7,28 +7,16 @@
     font-weight: bold;
 }
 
-.inpsLaptop{
+.inputLaptop{
     position: absolute;
     top: 35%;
-    margin: auto;
     text-align: center;
-    /* left: 36%; */
-    height: 2rem;
-    width: 100%;
-    
+    left: 38.7%;
+    height: 55px;
+    width: 350px;
+    border: #2a2a2a 2px solid;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inpsLaptop > input{
-   
-    border: 2px solid gray;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 10px;  
-     outline: none;
+    font-size: 22px;
 }
 
 
@@ -52,33 +40,96 @@ input::-webkit-inner-spin-button {
 }
 
 .btnLaptop{
-    /* position: absolute;
-    top: 45%; */
-    /* margin: auto; */
-    /* text-align: center; */
-    /* left: 45.5%;S */
+    position: absolute;
     height: 40px;
     width: 130px;
     border: 2px solid rgb(78, 77, 77);
     background-color: rgb(141, 140, 140);
-    font-weight: bold;
     border-radius: 10px;
-    color: black;
+    color: #fff;
+    top: 50%;
+    left:45%;
 }
 .btn:hover{
     background-color: #2a2a2a;
     color: #fff;
 }
-.mssg{
-    /* position: absolute; */
+.mssgLaptop{
+    position: absolute;
 
-    /* top: 50%; */
-    /* margin-top: 1rem; */
+    top: 60%;
+    left: 44.8%;
     color: black;
     align-items: center;
     text-align: center;
     font-size: 18px;
-    margin: 1rem auto;  
     
     font-weight: 400;
+}
+.numbers{
+    position: absolute;
+    top: 15%;
+    margin: auto;
+    width:55%;
+    left: 22.3%;
+    font-size: 70px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.numbers2{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    width:55%;
+    left: 22.3%;
+    font-size: 70px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.num{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+.equation{
+    position: absolute;
+    top:49%;
+    margin: auto;
+    width:50%;
+    left: 24.5%;
+    font-size: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.inNum, .inExp{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    font-size: 40px;
+}
+.equCheckBtn{
+    position: absolute;
+    top: 61%;
+    left: 46%;
+    width: 80px;
+    height: 35px;
+    font-size: 22px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.equCheck:hover{
+    background-color: lightgray;
+    color: #2a2a2a;
+}
+.message{
+    position: absolute;
+    top: 66.5%;
+    left: 43.6%;
+    font-size: 20px;
 }
