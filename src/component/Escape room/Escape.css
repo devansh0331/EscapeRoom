@@ -48,15 +48,15 @@
   width: 9rem;
   
   top: 26%;
-  left: 51%;
+  left: 50%;
 }
 
 #monalisa{
   position: absolute;
-  height: 13rem;
+  height: 12rem;
   width: 11rem;
   top: 24%;
-  left: 36.3%;
+  left: 35%;
 
 }
 
@@ -70,11 +70,11 @@
 
 #laptop{
   position: absolute;
-  height: 7rem;
-  width: 9rem;
+  height: 7.2rem;
+  width: 8.1rem;
 
-  bottom: 10.5%;
-  right: 52.5%;
+  bottom: 9.9%;
+  right: 51.8%;
 }
 
 #briefcase{
@@ -88,26 +88,27 @@
 #sticky{
   position: absolute;
   height: 4rem;
-  width: 5rem;
+  width: 3rem;
   bottom: 40%;
-  right: 5%;
+  right: 5.4%;
 
 }
 
 #clock{
   position: absolute;
-  height: 20rem;
-  width: 15rem;
-  right: 7.6%;
+  height: 16rem;
+  width: 7.1rem;
+  right: 12%;
   bottom: 30%;
 }
 
 #grid{
   position: absolute;
   height: 3rem;
-  width: 4rem;
-  top: 40%;
-  right: 25.5%;
+  width: 2.5rem;
+  top: 39%;
+  right: 26%;
+  filter: brightness(80%);
 }
 #doorlock{
   position: absolute;
@@ -120,10 +121,10 @@
 
 #bookshelf{
   position: absolute;
-  height: 15rem;
-  width: 30rem;
-  top: 50%;
-  left: 32%;
+  height: 6rem;
+  width: 22.8rem;
+  top: 55.6%;
+  left: 33.6%;
 }
 .mui-box {
     background-color: rgb(0,0,0); /* Fallback color */
