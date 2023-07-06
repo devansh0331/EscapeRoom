@@ -123,4 +123,20 @@
         width: 60px !important;
     }
 
+    .mrInput{
+        width: 80px !important;
+        height: 25px !important;
+        font-size: 1rem !important;
+    }
+
+    .mrBtn{
+        width: 50px !important;
+        height: 25px !important;
+        font-size: 0.6rem !important;
+    }
+    .inpsMobile{
+        height: 10rem !important/*  */;
+        font-size: 0.6rem !important;
+    }
+
 }
