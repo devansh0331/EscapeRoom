@@ -5,9 +5,12 @@ import './css/DoorLock.css'
 //Popup IMPORT
 import blankDoorLock from "../../img/final/popup/blankDoorLock.png"
 import CloseBtn from './CloseBtn'
+import { useNavigate } from 'react-router-dom'
+
 
 function Doorlock() {
 
+  const navigate = useNavigate()
 
   const [inp1, setinp1] = useState()
   const [inp2, setinp2] = useState()
@@ -24,6 +27,7 @@ function Doorlock() {
         setMssg('Yeah! You have cleared this round');
         setTimeout(() => {
           setMssg('')
+          navigate('../popup/win')
         }, 2000);
       }
 

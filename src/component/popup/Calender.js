@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useContext, useState} from 'react'
 
 
 import "./Popup.css"
@@ -8,6 +8,8 @@ import "./css/Calender.css"
 import blankCalender from "../../img/final/popup/blankCalender.png"
 import CloseBtn from './CloseBtn'
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../../auth/AuthConfig'
+
 
 function Calender() {
 
@@ -15,14 +17,19 @@ function Calender() {
   const[date,setDate] = useState();
   const[month,setMonth] = useState('');
   const[mssg,setMssg] = useState("");
- 
+  
+  const count = useContext(useAuth)
+  const {incrCount} = useAuth()
+
   const navigate = useNavigate();
   const onClickHandle =(e) =>{
     if((date == 23) && (month === 'SEPTEMBER')){
       setMssg("Congratulations! You are Right.")
       setTimeout(()=>{
         setMssg("");
+        incrCount()
         navigate('/popup/dec');
+        
       },1000);
 
     }else{

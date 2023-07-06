@@ -29,6 +29,7 @@ import Dictionary from './component/popup/bookPopup/Dictionary';
 import Encyclopedia from './component/popup/bookPopup/Encyclopedia';
 import Ikigai from './component/popup/bookPopup/Ikigai';
 import Investor from './component/popup/bookPopup/Investor';
+import Win from './component/popup/Win';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
       <Route path='/popup/demo' element={<DeadEndMobile/>}/>
       <Route path='/popup/mr' element={<MobileRiddle/>}/>
       <Route path='/popup/lr' element={<LaptopRiddle/>}/>
+      <Route path='/popup/win' element={<Win/>}/>
     </Routes>
   );
 }

@@ -1,4 +1,4 @@
-import React , {useState , useEffect} from 'react'
+import React , {useState , useEffect, useContext} from 'react'
 import "./Escape.css"
 import { Slide } from '@mui/material'
 // import bgImage from "../../img/escapeRoom.jpeg"
@@ -17,6 +17,7 @@ import GridBtn from "../../img/final/btn/GridBtn.png"
 import DoorLockBtn from "../../img/final/btn/DoorLockBtn.png"
 import BookshelfBtn from "../../img/final/btn/BookshelfBtn.png"
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../../auth/AuthConfig'
 
 
 
@@ -26,10 +27,10 @@ const Escape = () => {
     const [completion, setCompletion] = useState(true)
 
     const navigate = useNavigate()
-
-   
+    const newcount = useContext(useAuth)
+    // const {count} = useAuth()
     
-
+    console.log(newcount);
     useEffect(() => {
       setTimeout(() => {
 
