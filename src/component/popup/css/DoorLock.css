@@ -74,3 +74,7 @@
 .open-btn button:hover{
     background: green;
 }
+
+#in1, #in2, #in3, #in4, #in5, #in6{
+    text-align: center;
+} 

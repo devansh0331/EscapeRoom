@@ -18,7 +18,7 @@ function Calender() {
  
   const navigate = useNavigate();
   const onClickHandle =(e) =>{
-    if((date == 25) && (month === 'september')){
+    if((date == 23) && (month === 'SEPTEMBER')){
       setMssg("Congratulations! You are Right.")
       setTimeout(()=>{
         setMssg("");
@@ -41,7 +41,7 @@ function Calender() {
     <div className='inpsCalender'>
 
     <input type='number' onChange={(e)=>{setDate(e.target.value.slice(0,2));}} placeholder='Date' value={date} id="dateInput"/>
-    <input type='String' onChange={(e)=>{setMonth(e.target.value.slice(0,10));}} placeholder='Month' value={month} id="monthInput"/>
+    <input type='String' onChange={(e)=>{setMonth(e.target.value.slice(0,10).toUpperCase());}} placeholder='Month' value={month} id="monthInput"/>
     </div>
     <button className='btn' onClick={(e)=>onClickHandle()}>Submit</button>
     <p className='mssg'>{mssg}</p>

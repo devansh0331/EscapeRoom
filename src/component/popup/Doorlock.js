@@ -41,12 +41,12 @@ function Doorlock() {
 
     <span>Enter the code to UNLOCK the Door</span>
     <div className='inps'>
-      <input type='number' onChange={(e)=>{setinp1(e.target.value.slice(0,1));}} placeholder='' value={inp1}/>
-      <input type='number' onChange={(e)=>{setinp2(e.target.value.slice(0,1));}} placeholder='' value={inp2}/>
-      <input type='number' onChange={(e)=>{setinp3(e.target.value.slice(0,1));}} placeholder='' value={inp3}/>
-      <input type='number' onChange={(e)=>{setinp4(e.target.value.slice(0,1));}} placeholder='' value={inp4}/>
-      <input type='number' onChange={(e)=>{setinp5(e.target.value.slice(0,1));}} placeholder='' value={inp5}/>
-      <input type='number' onChange={(e)=>{setinp6(e.target.value.slice(0,1));}} placeholder='' value={inp6}/>
+      <input type='number' onChange={(e)=>{setinp1(e.target.value.slice(0,1));}} placeholder='' value={inp1} id='in1' onKeyUp={(e)=>{document.getElementById('in2').focus()}}/>
+      <input type='number' onChange={(e)=>{setinp2(e.target.value.slice(0,1));}} placeholder='' value={inp2} id='in2' onKeyUp={(e)=>{document.getElementById('in3').focus()}}/>  
+      <input type='number' onChange={(e)=>{setinp3(e.target.value.slice(0,1));}} placeholder='' value={inp3} id='in3' onKeyUp={(e)=>{document.getElementById('in4').focus()}}/>
+      <input type='number' onChange={(e)=>{setinp4(e.target.value.slice(0,1));}} placeholder='' value={inp4} id='in4' onKeyUp={(e)=>{document.getElementById('in5').focus()}}/>
+      <input type='number' onChange={(e)=>{setinp5(e.target.value.slice(0,1));}} placeholder='' value={inp5} id='in5' onKeyUp={(e)=>{document.getElementById('in6').focus()}}/>
+      <input type='number' onChange={(e)=>{setinp6(e.target.value.slice(0,1));}} placeholder='' value={inp6} id='in6'/>
       
     </div>
     {/* <div className='inps2'>

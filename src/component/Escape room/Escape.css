@@ -43,7 +43,6 @@
 /* Btn imgs ht. wdth */
 #calender , #mobile , #monalisa , #laptop , #briefcase , #sticky , #clock , #grid , #doorlock , #bookshelf{
   cursor: pointer;
-  
   z-index: 1;
 }
 #calender{
