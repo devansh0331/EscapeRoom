@@ -4,143 +4,150 @@
     background-size:cover ;
     z-index: -1;
     height: 100vh;
+    width: 100%;
     margin: 0%;
     top: 0;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     
 }
-
-.main{
-    
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 60vh;
-    width: 50%;
-    z-index: 0;
-    margin: auto;
-    position: relative;
-    justify-content: center;
-    padding-top: 70px;
-    align-items: center;
-    text-align: center;
-    top: 4%;
-}
-.paper{
-    padding:70px;
-    position: inherit;
-    bottom: 15%;
-    right: 10%;
-    background: url(../../img/paper.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin: auto;
-    height: 90vh;
-    width: 125%;
-}
-.title{
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-    color: black;
-    padding-top: 115px;
-}
-.subtitle{
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    color: black;
-}
-.s2{
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 10px;
-    padding-left: 8.9px;
-}
-.s3{
-    font-size: 22px;
-    font-weight: 400;
-    padding-top: 1px;
-}
-.btnStart{
-    background-color: rgb(149, 90, 41);
-    border-radius: 50rem;
-    width: 150px;
-    text-align: center;
-    align-items: center;
-    color: aliceblue;
-    height: 70px;
-    font-size: 35px;
-    margin: 30px;
-}
-.btnStart:hover{
-    background-color: rgb(103, 69, 40);
-    color: beige;
-}
+        .paper
+        {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 60%;
+            top: 20%;
+        }
+        .text-wrapper{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title{
+            font-size: 4rem;
+            color: black;
+        }
+        .subtitle{
+            font-size: 2rem;
+            color: black;
+        }
+        .s2{
+            font-size: 1.2rem;
+            color: black;
+        }
+        .s3{
+            font-size: 1.2rem;
+            color: black;
+        }
+        .btnStart{
+            background-color: rgb(149, 90, 41);
+            border-radius: 50rem;
+            width: 25%;
+            color: aliceblue;
+            height: 4rem;
+            font-size: 35px;
+            margin: 30px;
+        }
+        .btnStart:hover{
+            background-color: rgb(103, 69, 40);
+            color: beige;
+        }
 
 
 @media only screen and (max-width: 1000px) {
-    .main{
-        height: 60vh;
-        width: 100%;
-        z-index: 0;
-        padding-top: 80px;
-        margin: auto;
-    }   
     .paper{
-        background-color: beige;
-        background:url(../../img/paper.png);
-        padding:2rem;
-        background-repeat: no-repeat;
-        background-size:cover;
-        height: 40vh;
-        margin: auto;
-        text-align: center;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 60%;
+        top: 20%;
+    }
+    .text-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .title{
-        font-size: 40px;
-        font-weight: 600;
-        text-align: center;
+        font-size: 2rem;
         color: black;
-        padding-top: 40px;
     }
     .subtitle{
-        font-size: 20px;
-        font-weight: 400;
-        text-align: center;
+        font-size: 1rem;
         color: black;
+    }
+    .s2{
+        font-size: 0.7rem;
+        color: black;
+    }
+    .s3{
+        font-size: 0.7rem;
+        color: black;
+    }
+    .btnStart{
+        background-color: rgb(149, 90, 41);
+        border-radius: 50rem;
+        width: 25%;
+        color: aliceblue;
+        height: 2rem;
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .btnStart:hover{
+        background-color: rgb(103, 69, 40);
+        color: beige;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .main{
-        height: 60vh;
-        width: 100%;
-        z-index: 0;
-        padding-top: 80px;
-        margin: auto;
-    }   
     .paper{
-        background-color: beige;
-        background:url(../../img/paper2.png);
-        padding:20px;
-        background-repeat: no-repeat;
-        background-size:cover;
-        height: 70vh;
-        margin: auto;
-        text-align: center;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 60%;
+        top: 20%;
+    }
+    .text-wrapper{
+        width: 70%;
+        height: 60%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .title{
-        font-size: 40px;
-        font-weight: 600;
-        text-align: center;
+        font-size: 2rem;
         color: black;
-        padding-top: 40px;
     }
     .subtitle{
-        font-size: 20px;
-        font-weight: 400;
-        text-align: center;
+        font-size: 1rem;
         color: black;
+    }
+    .s2{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .s3{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .btnStart{
+        background-color: rgb(149, 90, 41);
+        border-radius: 30%;
+        color: aliceblue;
+        height: 2rem;
+        font-size: 15px;
+        margin: 10px;
+    }
+    .btnStart:hover{
+        background-color: rgb(103, 69, 40);
+        color: beige;
     }
 }
