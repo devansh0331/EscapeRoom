@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-
+import {useAuth} from "./../../context/AuthContext"
 import "./Popup.css"
 import "./css/Briefcase.css"
 
@@ -8,14 +8,15 @@ import blankBriefcase from "../../img/final/popup/blankBriefcase.png"
 import CloseBtn from './CloseBtn'
 import { useNavigate } from 'react-router-dom'
 function Briefcase() {
-
+  const { valCount, count } = useAuth()
   const[password,setPassword] = useState('');
   const[mssg,setMssg] = useState("");
  
   const navigate = useNavigate();
-  const onClickHandle =(e) =>{
+  const onClickHandle = async (e) =>{
     if(password === 'KGS79Z'){
       setMssg("Opening...")
+      if (count == 0 ) {await valCount(); console.log(count)}
       setTimeout(()=>{
         setMssg("");
         navigate('/popup/deb');

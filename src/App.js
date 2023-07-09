@@ -1,4 +1,4 @@
-
+import { AuthProvider } from "./context/AuthContext";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Escape from './component/Escape room/Escape';

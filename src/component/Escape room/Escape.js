@@ -3,6 +3,7 @@ import "./Escape.css"
 import { Slide } from '@mui/material'
 // import bgImage from "../../img/escapeRoom.jpeg"
 import clearBg from "../../img/final/bg/clearBg.png"
+import { useAuth } from "./../../context/AuthContext";
 
 
 //Btn IMPORT
@@ -17,7 +18,6 @@ import GridBtn from "../../img/final/btn/GridBtn.png"
 import DoorLockBtn from "../../img/final/btn/DoorLockBtn.png"
 import BookshelfBtn from "../../img/final/btn/BookshelfBtn.png"
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '../../auth/AuthConfig'
 
 
 
@@ -25,12 +25,10 @@ import { useAuth } from '../../auth/AuthConfig'
 
 const Escape = () => {
     const [completion, setCompletion] = useState(true)
-    
+    const { valCount, count } = useAuth();
     const navigate = useNavigate()
-    const newcount = useContext(useAuth)
     // const {count} = useAuth()
     
-    console.log(newcount);
     useEffect(() => {
       setTimeout(() => {
 
@@ -82,7 +80,7 @@ const Escape = () => {
     // <Slide direction="up" in={true} >
     <Slide>
         <div className='escape-container'>
-        <span>Escape from the room</span>
+        <span>Escape from the room </span>
         </div>
     </Slide>
     

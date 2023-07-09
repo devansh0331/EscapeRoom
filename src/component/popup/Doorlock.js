@@ -1,19 +1,18 @@
 import React , {useState} from 'react'
-
 import "./Popup.css"
 import './css/DoorLock.css'
 //Popup IMPORT
 import blankDoorLock from "../../img/final/popup/blankDoorLock.png"
 import CloseBtn from './CloseBtn'
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '../../auth/AuthConfig'
+import {useAuth} from "./../../context/AuthContext"
 
 
 
 function Doorlock() {
 
   const navigate = useNavigate()
-
+  const { count } = useAuth()
   const [inp1, setinp1] = useState()
   const [inp2, setinp2] = useState()
   const [inp3, setinp3] = useState()
@@ -22,16 +21,21 @@ function Doorlock() {
   const [inp6, setinp6] = useState()
 
   const[mssg,setMssg] = useState("");
-  const { valCOunt, count } = useAuth();
-  console.log(count);
+  console.log("door lock:",count);
   const handleOnSubmit = (e) => {
       // e.preventDefault()
+
       if((inp1 == 3) && (inp2 == 4) && (inp3 == 9) && (inp4 == 8) && (inp5 == 6) && (inp6 == 2)){
+        if (count == 1 || count == 2 ) {
         setMssg('Yeah! You have cleared this round');
         setTimeout(() => {
           setMssg('')
           navigate('../popup/win')
         }, 2000);
+        }
+        else {
+          alert("You have some unfinished clues!! Complete and get back here !!")
+        }
       }
 
       else{

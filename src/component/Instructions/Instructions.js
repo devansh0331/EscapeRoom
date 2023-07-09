@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "./../../context/AuthContext"
 
 
 // import {auth , provider} from "../auth/config"
@@ -10,12 +11,13 @@ import paper2 from '../../img/paper2.png'
 
 const Instructions = () => {
   const navigate = useNavigate()
+  const {count} = useAuth()
 
   return (
     <div className='instruction'>
           <img src={paper2} className='paper'/>
           <main className='text-wrapper'>
-          <h2 className='title'>ESCAPE ROOM</h2>
+          <h2 className='title'>ESCAPE ROOM {count}</h2>
           <p className='subtitle'>Escape the room using the hidden clues</p>
           <p className='subtitle s2'><b>Note:</b> Only limited participants will be entering the next level ☠ </p>
           <button onClick={()=>{navigate('./coundown')}} className='btnStart'>Start</button>

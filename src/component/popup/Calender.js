@@ -8,7 +8,7 @@ import "./css/Calender.css"
 import blankCalender from "../../img/final/popup/blankCalender.png"
 import CloseBtn from './CloseBtn'
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '../../auth/AuthConfig'
+import { useAuth } from "./../../context/AuthContext";
 // import { useAuth } from '../../../context/AuthContext'
 
 
@@ -17,7 +17,7 @@ import { useAuth } from '../../auth/AuthConfig'
 
 function Calender() {
 
-  const { valCOunt, count } = useAuth();
+  const { valCount, count } = useAuth();
   
   console.log(count);
   const[date,setDate] = useState();
@@ -31,7 +31,7 @@ function Calender() {
   const onClickHandle = async (e) =>{
     if((date == 23) && (month === 'SEPTEMBER')){
       setMssg("Congratulations! You are Right.")
-      await valCOunt();
+      if (count == 0 || count == 1 ) {await valCount(); console.log(count) }
       setTimeout(()=>{
         setMssg("");
         // incrCount()
