@@ -17,7 +17,7 @@ const Instructions = () => {
     <div className='instruction'>
           <img src={paper2} className='paper'/>
           <main className='text-wrapper'>
-          <h2 className='title'>ESCAPE ROOM {count}</h2>
+          <h2 className='title'>ESCAPE ROOM </h2>
           <p className='subtitle'>Escape the room using the hidden clues</p>
           <p className='subtitle s2'><b>Note:</b> Only limited participants will be entering the next level ☠ </p>
           <button onClick={()=>{navigate('./coundown')}} className='btnStart'>Start</button>
