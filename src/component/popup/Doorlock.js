@@ -6,6 +6,8 @@ import './css/DoorLock.css'
 import blankDoorLock from "../../img/final/popup/blankDoorLock.png"
 import CloseBtn from './CloseBtn'
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../../auth/AuthConfig'
+
 
 
 function Doorlock() {
@@ -20,7 +22,8 @@ function Doorlock() {
   const [inp6, setinp6] = useState()
 
   const[mssg,setMssg] = useState("");
-
+  const { valCOunt, count } = useAuth();
+  console.log(count);
   const handleOnSubmit = (e) => {
       // e.preventDefault()
       if((inp1 == 3) && (inp2 == 4) && (inp3 == 9) && (inp4 == 8) && (inp5 == 6) && (inp6 == 2)){

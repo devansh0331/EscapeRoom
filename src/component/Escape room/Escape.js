@@ -25,7 +25,7 @@ import { useAuth } from '../../auth/AuthConfig'
 
 const Escape = () => {
     const [completion, setCompletion] = useState(true)
-
+    
     const navigate = useNavigate()
     const newcount = useContext(useAuth)
     // const {count} = useAuth()

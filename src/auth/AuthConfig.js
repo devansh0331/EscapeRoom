@@ -1,31 +1,22 @@
-import { useState, createContext } from "react";
-import ReactDOM from "react-dom/client";
-import Escape from "../component/Escape room/Escape";
-import App from "../App";
+import React, { useContext, useState } from "react";
 
-const useAuth = createContext()
+const AuthContext = React.createContext();
 
+export function useAuth() {
+  return useContext(AuthContext);
+}
 
+export function AuthProvider({ children }) {
+  const [count, setCount] = useState(0);
 
-export default function Count() {
-    const [count, setCount] = useState('Changed Value');
-
-    // function incrCount() {
-    //     setCount(count + 1)
-        
-    // }
-
-    // const value = {count , incrCount}
-
-
-
-
-  
-    return (
-      <useAuth.Provider value={count}>
-            <App/>
-      </useAuth.Provider>
-    );
+  function valCOunt() {
+    setCount(count + 1);
   }
 
-  export {useAuth}
+  const value = {
+    count,
+    valCOunt
+  };
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
