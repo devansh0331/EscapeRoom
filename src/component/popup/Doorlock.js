@@ -21,7 +21,7 @@ function Doorlock() {
   const [inp6, setinp6] = useState()
 
   const[mssg,setMssg] = useState("");
-  console.log("door lock:",count);
+ 
   const handleOnSubmit = (e) => {
       // e.preventDefault()
 

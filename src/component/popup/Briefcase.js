@@ -16,7 +16,7 @@ function Briefcase() {
   const onClickHandle = async (e) =>{
     if(password === 'KGS79Z'){
       setMssg("Opening...")
-      if (count == 0 ) {await valCount(); console.log(count)}
+      if (count == 0 ) {await valCount();}
       setTimeout(()=>{
         setMssg("");
         navigate('/popup/deb');

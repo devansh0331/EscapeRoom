@@ -19,7 +19,7 @@ function Calender() {
 
   const { valCount, count } = useAuth();
   
-  console.log(count);
+  
   const[date,setDate] = useState();
   const[month,setMonth] = useState('');
   const[mssg,setMssg] = useState("");
@@ -31,7 +31,7 @@ function Calender() {
   const onClickHandle = async (e) =>{
     if((date == 23) && (month === 'SEPTEMBER')){
       setMssg("Congratulations! You are Right.")
-      if (count == 0 || count == 1 ) {await valCount(); console.log(count) }
+      if (count == 0 || count == 1 ) {await valCount();  }
       setTimeout(()=>{
         setMssg("");
         // incrCount()
